@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { TableBasicExample} from './table-basic-example/table-basic-example';
 import { ButtonOverviewExample} from './button-overview-example/button-overview-example';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -14,12 +15,14 @@ import { ButtonOverviewExample} from './button-overview-example/button-overview-
     TableBasicExample,
     ButtonOverviewExample,
     
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatTableModule
+    MatTableModule,
+    MatButtonModule
 
   ],
   providers: [],
